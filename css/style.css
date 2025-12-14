@@ -6,14 +6,41 @@
     padding: 0;
 }
 
+/* <-- COLOR ROOTS --> */
+
+
+:root {
+--pale-azure: #97dffcff;
+--light-sky-blue: #93caf6ff;
+--jordy-blue: #8eb5f0ff;
+--tropical-indigo: #858ae3ff;
+--slate-blue: #7364d2ff;
+--iris: #613dc1ff;
+--grape: #5829a7ff;
+--indigo: #4e148cff;
+--indigo-2: #461177ff;
+--russian-violet: #3d0e61ff;
+}
+
+/* <-- COLOR ROOTS --> */
+
+
 .ShopName {
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.448);
+    background-image: linear-gradient(45deg,var(--jordy-blue),var(--tropical-indigo),var(--slate-blue));
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2em;
     height: auto;
+    animation: colorchange 15s ease infinite;
+    background-size: 1000% 1000%;
+}
+
+@keyframes colorchange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .navbar {
@@ -33,7 +60,7 @@
 
 footer {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.448);
+    background-color: var(--jordy-blue);
     height: 30px;
     display: flex;
     align-items: center;

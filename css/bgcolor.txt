@@ -1,0 +1,26 @@
+:root {
+--pale-azure: #97dffcff;
+--light-sky-blue: #93caf6ff;
+--jordy-blue: #8eb5f0ff;
+--tropical-indigo: #858ae3ff;
+--slate-blue: #7364d2ff;
+--iris: #613dc1ff;
+--grape: #5829a7ff;
+--indigo: #4e148cff;
+--indigo-2: #461177ff;
+--russian-violet: #3d0e61ff;
+}
+body {
+    user-select: none;
+}
+body {
+    background-image: linear-gradient(45deg,var(--pale-azure),var(--light-sky-blue),var(--jordy-blue),var(--tropical-indigo),var(--slate-blue),var(--iris),var(--grape),var(--indigo),var(--indigo-2),var(--russian-violet));
+    height: 100vh;
+    animation: colorchange 30s ease infinite;
+    background-size: 2000% 2000%;
+}
+@keyframes colorchange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}2
