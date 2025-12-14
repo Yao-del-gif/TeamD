@@ -1,0 +1,41 @@
+* {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.ShopName {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.448);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    height: auto;
+}
+
+.navbar {
+    margin-top: 15px;
+}
+.links {
+    border-right: 3px solid white;
+    padding-right: 5px;
+    margin-right: 5px;
+    font-size: 1.5em;
+    color: bisque;
+}
+.links:first-child {
+    border-left: 3px solid white;
+    padding-left: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.448);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
